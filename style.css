@@ -1,0 +1,13 @@
+.reset{
+    background-color: rgb(34, 62, 95);
+    color: white;
+}
+
+td{
+    height: 160px;
+    width: 160px;
+    text-align: center;
+    border: 5px solid black;
+    font-size: 100px;
+}
+
