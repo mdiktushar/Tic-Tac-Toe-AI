@@ -4,10 +4,10 @@
 }
 
 td{
-    height: 160px;
-    width: 160px;
+    height: 100px;
+    width: 100px;
     text-align: center;
     border: 5px solid black;
-    font-size: 100px;
+    font-size: 50px;
 }
 
