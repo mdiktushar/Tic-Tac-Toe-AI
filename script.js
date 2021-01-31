@@ -35,15 +35,25 @@ function pcWinn(){
     Tag.textContent = '';
     res.textContent = "........................................PC Win........................................";
     f = false;
+    fill();
 }
 function youWinn(){
     console.log("YOU")
     Tag.textContent = '';
     res.textContent = "........................................You Win........................................";
     f = false;
-
+    fill();
 }
 // .............................
+
+// Filling the empty Block
+function fill(){
+    for(var i = 0; i<squares.length; i++){
+        if(squares[i].textContent === '')
+        squares[i].textContent = ' ';
+
+    }
+}
 
 // Result Desision Function
 function result(){
