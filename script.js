@@ -303,14 +303,23 @@ function pcMove(){
     }
     
     if(f === true){
-        for (i=0; i<squares.length; i++){
-            if(squares[i].textContent === ''){
-                squares[i].textContent = 'X';
+        // for (i=0; i<squares.length; i++){
+        //     if(squares[i].textContent === ''){
+        //         squares[i].textContent = 'X';
+        //         break;
+        //     }
+        // }
+        
+        while(true){
+            temp = Math.floor(Math.random() * 9);
+            if(squares[temp].textContent === ''){
+                squares[temp].textContent = 'X';
+                console.log("Normal Short");
                 break;
             }
         }
-        console.log("Normal Short")
-    }    
+        
+    }
 
 }
 // ....................................................................................
