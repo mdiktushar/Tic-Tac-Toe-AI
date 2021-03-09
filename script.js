@@ -303,21 +303,23 @@ function pcMove(){
     }
     
     if(f === true){
-        // for (i=0; i<squares.length; i++){
-        //     if(squares[i].textContent === ''){
-        //         squares[i].textContent = 'X';
-        //         break;
-        //     }
-        // }
-        
-        while(true){
-            temp = Math.floor(Math.random() * 9);
-            if(squares[temp].textContent === ''){
-                squares[temp].textContent = 'X';
-                console.log("Normal Short");
+        for (i=0; i<squares.length; i++){
+            if(squares[i].textContent === ''){
+                squares[i].textContent = 'X';
                 break;
             }
         }
+        
+        // while(f){
+        //     temp = Math.floor(Math.random() * 9);
+        //     if(squares[temp].textContent === ''){
+        //         squares[temp].textContent = 'X';
+        //         console.log("Normal Short");
+        //         f = false;
+        //         break;
+        //     }
+        //     console.log("loop")
+        // }
         
     }
 
